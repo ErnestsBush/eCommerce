@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+	<link rel='stylesheet' type='text/css' href='public/styles.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='public/jquery.js'></script>
+</head>
+<body>
+	<div class='header'>
+		<div class='navigation'>
+			<div class='navLink'>
+				<a href='#'>Home</a>
+			</div>
+			<div class='navLink'>
+				<a href='products'>Colors</a>
+			</div>
+			<div class='navLink'>
+				<a href='cart'>Cart <em><% if(cartNumb != 0){ %><%= cartNumb %><% } %></em></a>
+			</div>
+			<div class='navLink'>
+				<a href='contact'>Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div class='midContent'>
+		<div class='contactWrapper'>
+			<form action='/submit/contact' method='POST'>
+				<div class='standardText'>Questions or Comments?</div>
+				<div class='name'>
+					<textarea name='name' rows='1' cols='55' placeholder='Name'></textarea>
+				</div>
+				<div class='email'>
+					<textarea name='email' rows='1' cols='55' placeholder='E-mail'></textarea>
+				</div>
+				<div class='subject'>
+					<textarea name='subject' rows='1' cols='55' placeholder='Subject'></textarea>
+				</div>
+				<div class='standardText'>Enter your comment below</div>
+				<div class='comment'>
+					<textarea name='comment' rows='10' cols='55'></textarea>
+				</div>
+					<div class='contactSubmit'><button type='submit'>Submit</button></div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

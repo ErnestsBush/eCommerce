@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+	<link rel='stylesheet' type='text/css' href='public/styles.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='public/jquery.js'></script>
+</head>
+<body>
+	<div class='header'>
+		<div class='navigation'>
+			<div class='navLink'>
+				<a href='#'>Home</a>
+			</div>
+			<div class='navLink'>
+				<a href='products'>Colors</a>
+			</div>
+			<div class='navLink'>
+				<a href='cart'>Cart <em><% if(cartNumb != 0){ %><%= cartNumb %><% } %></em></a>
+			</div>
+			<div class='navLink'>
+				<a href='contact'>Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div class='colorsBody'>
+		<div class='buttonsContainer'>
+			<button id='redsButton'>Reds</button>
+			<button id='bluesButton'>Blues</button>
+			<button id='greensButton'>Greens</button>
+			<button id='otherButton'>Other</button>
+		</div>
+
+		<div class='productsContainer'>
+			<% for(var i=0;i<products.length;i++){ %>
+				<div class='listing'>
+					<div class='listingImage'>
+						<a href='products/<%= products[i].ID %>'><img src='public/<%= products[i].image %>'></a>
+					</div>
+					<div class='listingTitle'>
+						<a href='products/<%= products[i].ID %>'><p><%= products[i].title %></p></a>
+					</div>
+					<div class='listingPrice'>
+						<p>$<%= products[i].price %></p>
+					</div>
+					<div class='listingButtons'>
+						<a href="buyNow/<%= products[i].ID %>">
+							<button id="buyNow">Buy it Now</button>
+						</a>
+						<button id='addCart' value='<%= products[i].ID %>'>Add to Cart</button>
+					</div>
+				</div>
+			<% } %>
+		</div>
+	</div>
+</body>
+</html>

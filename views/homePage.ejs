@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listing Page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto|Roboto+Condensed|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+	<link rel='stylesheet' type='text/css' href='public/styles.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='public/jquery.js'></script>
+</head>
+<body>
+	<div class='header'>
+		<div class='navigation'>
+			<div class='navLink'>
+				<a href='#'>Home</a>
+			</div>
+			<div class='navLink'>
+				<a href='listings'>Colors</a>
+			</div>
+			<div class='navLink'>
+				<a href='cart'>Cart <em><% if(cartNumb != 0){ %><%= cartNumb %><% } %></em></a>
+			</div>
+			<div class='navLink'>
+				<a href='contact'>Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="midSection">
+		<div class="centerImages">
+			<div class="img">
+				<a href="lighters"><img src="public/image4.jpg"></a>
+			</div>
+
+			<div class="img">
+				<a href="lighters"><img src="public/image3.jpg"></a>
+			</div>
+		</div>
+	</div>
+
+	<h1 align="center">- Featured Picks -</h1>
+
+	<div class="bottomSection">
+		<div class="featuredPicks">
+			<%
+				for(var i=0; i<listings.length; i++){ %>
+						<div class="listing">
+							<div class='listingImage'>
+								<a href='products/<%= listings[i].ID %>'><img src='public/<%= listings[i].image %>'></a>
+							</div>
+							<div class='listingTitle'>
+								<a href='products/<%= listings[i].ID %>'><p><%= listings[i].title %></p></a>
+							</div>
+							<div class='listingPrice'>
+								<p>$<%= listings[i].price %></p>
+							</div>
+							<div class='listingButtons'>
+								<a href="buyNow/<%= listings[i].ID %>">
+									<button id="buyNow">Buy it Now</button>
+								</a>
+								<button id='addCart' value='<%= listings[i].ID %>'>Add to Cart</button>
+							</div>
+						</div>	
+				<%	}
+				%>
+		</div>
+	</div>
+
+
+	<h1 class="instagram">
+		<a href="https://www.instagram.com/#/" target="_blank"><i class="fab fa-instagram"></i></a>
+	</h1>
+
+	<div class="sell">
+		<h2 align="center">Like our Colors?</h2>
+	</div>
+	<div class="emailInput">
+		<form action="/submit/email" method="POST">
+			<input type="email" placeholder="E-Mail" name="email">
+			<button type="submit">Subscribe</button>
+		</form>
+	</div>
+	<p class="standardText">Subscribe to our e-mail list to get free coupons every once in a while</p>
+
+</body>
+</html>

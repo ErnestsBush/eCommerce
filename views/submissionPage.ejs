@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+	<link rel='stylesheet' type='text/css' href='../public/styles.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='../public/jquery.js'></script>
+</head>
+<body>
+	<div class='header'>
+		<div class='navigation'>
+			<div class='navLink'>
+				<a href='#'>Home</a>
+			</div>
+			<div class='navLink'>
+				<a href='../products'>Colors</a>
+			</div>
+			<div class='navLink'>
+				<a href='../cart'>Cart <em><% if(cartNumb != 0){ %><%= cartNumb %><% } %></em></a>
+			</div>
+			<div class='navLink'>
+				<a href='../contact'>Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div class='submissionTextContainer'>
+		<p class='submissionText'><%= successText %></p>
+	</div>
+
+</body>
+</html>
