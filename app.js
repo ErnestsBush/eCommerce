@@ -218,8 +218,8 @@ app.post('/chargePaypal',function(req,res){
 			'payment_method':'paypal'
 		},
 		'redirect_urls':{
-			'return_url':`https://localhost:8080/success?price=${chargeAmount}&description=${items}`,
-			'cancel_url':'https://localhost:8080/cancel'
+			'return_url':`http://35.228.184.178/success?price=${chargeAmount}&description=${items}`,
+			'cancel_url':'http://35.228.184.178/cancel'
 		},
 		'transactions':[{
 			'item_list':{
