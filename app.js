@@ -1,4 +1,4 @@
-const port = 8080;
+const port = 80;
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
