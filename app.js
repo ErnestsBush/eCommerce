@@ -80,7 +80,7 @@ app.get('/buyNow/:ID',function(req,res){
 	var cookieCart = req.sanitize(cookieValue.cart);
 	var ID = req.sanitize(req.params.ID);
 
-	if(!cookieCart){
+	if(cookieCart){
 		var cookieArray = [];
 		cookieArray.push(ID);
 		var cookieStringArray = JSON.stringify(cookieArray);
