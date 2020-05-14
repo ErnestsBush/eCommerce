@@ -49,10 +49,12 @@
 					<% } %>
 					</div>
 					<hr>
-					<form action='/chargePaypal' method='POST'>
-						<input type="submit" value="PayPal" class='paypalButton'>
-						<input type="hidden" name='description value='<%= cart %>'
-					</form>
+					<% if(total > 0){ %>
+						<form action='/chargePaypal' method='POST'>
+							<input type="submit" value="PayPal" class='paypalButton'>
+							<input type="hidden" name='description value='<%= cart %>'
+						</form>
+						<%  } %>
 				</div>
 			</div> 
 		
