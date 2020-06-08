@@ -14,14 +14,14 @@
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	width:500px;
+	width:700px;
 }
 .navLink a{
 	color:#cbcbcb;
 	font-size:1.5em;
 }
 
-.colorsBody{
+.productsBody{
 	display:grid;
 	grid-template-columns: 20% 80%;
 }
@@ -58,10 +58,18 @@
 	margin-top:33px;
 }
 
+.listingImage img{
+    height:150px;
+    width:150px;
+    margin:13px;
+}
+
 .listingImg{
 	display:flex;
 	justify-content:center;
-	align-items:center; 
+    align-items:center; 
+    height:477px;
+	width:477px;
 }
 
 .listingImg img{

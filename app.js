@@ -80,7 +80,7 @@ app.get('/buyNow/:ID',function(req,res){
 	var cookieCart = req.sanitize(cookieValue.cart);
 	var ID = req.sanitize(req.params.ID);
 
-	if(cookieCart){
+	if(!cookieCart){
 		var cookieArray = [];
 		cookieArray.push(ID);
 		var cookieStringArray = JSON.stringify(cookieArray);
@@ -176,7 +176,6 @@ app.get('/submission/:text',function(req,res){
 app.post('/submit/:type',function(req,res){
 	var type = req.sanitize(req.params.type);
 	var cookieCart = req.sanitize(cookieValue.cart);
-
 	if(type == 'contact'){
 		var contactName = req.sanitize(req.body.name);
 		var contactEmail = req.sanitize(req.body.email);
