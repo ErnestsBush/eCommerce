@@ -1,7 +1,7 @@
 var arrayDB = [
-	
+
 	{
-		'ID': 8,
+		'ID': 1,
 		'title': 'I3-7100',
 		'image': 'i3_7100.jpg',
 		'price': 100,
@@ -9,7 +9,7 @@ var arrayDB = [
 		'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 	},
 	{
-		'ID': 9,
+		'ID': 2,
 		'title': 'Nvidia GeForce GTX 1080Ti',
 		'image': 'gtx1080ti.jpg',
 		'price': 500,
@@ -17,7 +17,7 @@ var arrayDB = [
 		'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 	},
     {
-	'ID': 10,
+	'ID': 3,
 		'title': 'Western digital purple 1tb',
 		'image': 'wdpurple1tb.jpg',
 		'price': 50,
@@ -25,7 +25,7 @@ var arrayDB = [
 		'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 	},
 	{
-		'ID': 11,
+		'ID': 4,
 			'title': 'SanDisk Plus 240gb ssd',
 			'image': 'sandiskssd240gb.jpg',
 			'price': 60,
@@ -33,7 +33,7 @@ var arrayDB = [
 			'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 		},
 		{
-			'ID': 12,
+			'ID': 5,
 				'title': 'Corsair AX1600i 1600W power supply',
 				'image': 'corsairax1600i.jpg',
 				'price': 120,
@@ -41,7 +41,7 @@ var arrayDB = [
 				'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 			},
 			{
-				'ID': 13,
+				'ID': 6,
 					'title': 'MSI H310M PRO-VH LGA 1151 mATX',
 					'image': 'msih310m.jpg',
 					'price': 100,
@@ -49,7 +49,7 @@ var arrayDB = [
 					'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 				},
 				{
-					'ID': 14,
+					'ID': 7,
 						'title': 'Corsair Vengance LPX 8gb DDR4 RAM 2666MHz C16',
 						'image': 'corsairvengance8gb.png',
 						'price': 45,
@@ -57,10 +57,10 @@ var arrayDB = [
 						'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 					},	
 					{
-						'ID': 15,
+						'ID': 8,
 							'title': 'Corsair Carbide SPEC-06 Tempered Glass White',
 							'image': 'corsairspec-06.jpg',
-							'price': 90,
+							'price': 95,
 							'type': 'CASE',
 							'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 						},	
