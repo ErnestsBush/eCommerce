@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Listing Page</title>
+	<title>Cart Page</title>
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto|Roboto+Condensed|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
 	<link rel='stylesheet' type='text/css' href='public/styles.css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -52,7 +52,7 @@
 					<% if(total > 0){ %>
 						<form action='/chargePaypal' method='POST'>
 							<input type="submit" value="PayPal" class='paypalButton'>
-							<input type="hidden" name='description value='<%= cart %>'
+							<input type="hidden" name='description' value='<%= cart %>'>
 						</form>
 						<%  } %>
 				</div>

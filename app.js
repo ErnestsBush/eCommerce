@@ -176,6 +176,7 @@ app.get('/submission/:text',function(req,res){
 app.post('/submit/:type',function(req,res){
 	var type = req.sanitize(req.params.type);
 	var cookieCart = req.sanitize(cookieValue.cart);
+	
 	if(type == 'contact'){
 		var contactName = req.sanitize(req.body.name);
 		var contactEmail = req.sanitize(req.body.email);

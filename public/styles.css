@@ -3,8 +3,8 @@
 	text-decoration:none;
 }
 .header{
-	height:200px;
-	background-color:#A93331;
+	height:100px;
+	background-color:#000080;
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -17,9 +17,17 @@
 	width:700px;
 }
 .navLink a{
-	color:#cbcbcb;
+	color:white;
 	font-size:1.5em;
 }
+
+.navLink { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .navLink:hover, .listing:hover { 
+    transform: scale(1.1); 
+    }
 
 .productsBody{
 	display:grid;
@@ -33,17 +41,19 @@
 
 .productsContainer{
 	display:grid;
-	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
 }
 
 .listing{
-	height:300px;
-    display:flex;
+    height: 300px;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:20px;
-    margin-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 }
 
 .listingTitle p{
@@ -229,8 +239,8 @@
 }
 
 .centerImages > .img img{
-    width:500px;
-    height:500px;
+    width:500px !important;
+    height:500px !important;
 }
 
 .bottomSection{
@@ -240,9 +250,10 @@
 }
 
 .featuredPicks{
-    width:1200px;
-    display:grid;
+    width: 1050px;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .emailInput{
@@ -269,4 +280,23 @@
 
 .instagram i{
     text-decoration:none;
+    color: white;
+}
+
+.featuredPicksHeader {
+    background-color: #000080;
+    color: white;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerDesign {
+    background-color: #000080;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }

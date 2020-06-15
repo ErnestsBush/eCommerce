@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Listing Page</title>
+	<title>Home Page</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto|Roboto+Condensed|Ubuntu+Condensed&display=swap" rel="stylesheet"> 
 	<link rel='stylesheet' type='text/css' href='public/styles.css'>
@@ -38,7 +38,9 @@
 		</div>
 	</div>
 
-	<h1 align="center">- Featured Picks -</h1>
+	<div class="featuredPicksHeader" style="justify-content: center;">
+		<h1>- Featured Picks -</h1>
+	</div>
 
 	<div class="bottomSection">
 		<div class="featuredPicks">
@@ -66,7 +68,7 @@
 		</div>
 	</div>
 
-
+<footer class="footerDesign">
 	<h1 class="instagram">
 		<a href="https://www.instagram.com/#/" target="_blank"><i class="fab fa-instagram"></i></a>
 	</h1>
@@ -77,10 +79,10 @@
 	<div class="emailInput">
 		<form action="/submit/email" method="POST">
 			<input type="email" placeholder="E-Mail" name="email">
-			<button type="submit">Subscribe</button>
+			<button type="submit" class="buttonDesign">Subscribe</button>
 		</form>
 	</div>
 	<p class="standardText">Subscribe to our e-mail list to get free coupons every once in a while</p>
-
+</footer>
 </body>
 </html>
